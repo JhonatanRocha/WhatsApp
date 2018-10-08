@@ -50,7 +50,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginTop="46dp"
-        android:id="@+id/editTextValidacao"
+        android:id="@+id/editTextCodigoValidacao"
         android:hint="Digite o código!"
         android:textColor="@color/textColorPrimary"
         android:layout_below="@+id/titleTextDisclaimer"
@@ -65,7 +65,7 @@
         android:id="@+id/botaoValidar"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/textColorPrimary"
-        android:layout_below="@+id/editTextValidacao"
+        android:layout_below="@+id/editTextCodigoValidacao"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
