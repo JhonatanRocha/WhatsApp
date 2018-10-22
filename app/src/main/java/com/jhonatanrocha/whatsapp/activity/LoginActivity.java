@@ -22,12 +22,13 @@ import com.jhonatanrocha.whatsapp.R;
 import com.jhonatanrocha.whatsapp.helper.Permissao;
 import com.jhonatanrocha.whatsapp.helper.Preferencias;
 
-import java.util.HashMap;
 import java.util.Random;
 
 public class LoginActivity extends Activity {
 
-    private EditText editTextNome;
+
+    // Comentado por pertencia a antiga funcionalidade de SMS
+    /* private EditText editTextNome;
     private EditText editTextCodigoPais;
     private EditText editTextCodigoArea;
     private EditText editTextTelefone;
@@ -89,17 +90,14 @@ public class LoginActivity extends Activity {
                     Toast.makeText(LoginActivity.this, "Problema ao enviar SMS, tente novamente mais tarde!", Toast.LENGTH_LONG).show();
                 }
 
-//              HashMap<String, String> usuario = preferencias.getDadosUsuario();
-//              Log.i("Recupernando Dados:", "T: " + usuario.get("token"));
-
             }
         });
-    }
+    } */
 
     /**
      * Envio de SMS
      */
-    private Boolean enviarSMS(String telefone, String mensagem) {
+   /* private Boolean enviarSMS(String telefone, String mensagem) {
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(telefone, null, mensagem, null, null);
@@ -136,5 +134,21 @@ public class LoginActivity extends Activity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    } */
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+
     }
+
+    public void abrirCadastroUsuario(View view) {
+        Intent intent = new Intent(LoginActivity.this, CadastroUsuarioActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

@@ -3,4 +3,6 @@
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="botao_validar">Validar</string>
     <string name="text_validacao_disclaimer">Você recebeu um SMS para validação do seu número, digite o código de validação abaixo:</string>
+    <string name="botao_logar">Logar</string>
+    <string name="texto_cadastrar">Não tem conta? <u>Cadastra-se</u></string>
 </resources>
